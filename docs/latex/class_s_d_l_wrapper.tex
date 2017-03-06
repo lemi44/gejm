@@ -1,0 +1,142 @@
+\hypertarget{class_s_d_l_wrapper}{}\section{S\+D\+L\+Wrapper Class Reference}
+\label{class_s_d_l_wrapper}\index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+
+
+{\ttfamily \#include $<$S\+D\+L\+Wrapper.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_s_d_l_wrapper_a32326cfffe91c18fcda5fb8085521f5f}{S\+D\+L\+Wrapper} ()
+\item 
+\hyperlink{class_s_d_l_wrapper_aa361c10710aed3fb4fd6a29e426f9306}{$\sim$\+S\+D\+L\+Wrapper} ()
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \hyperlink{class_s_d_l_wrapper_a80231a7b46fc17ee95742cff2d87a077}{load\+Texture\+From\+Rendered\+Text} (std\+::string texture\+Text, S\+D\+L\+\_\+\+Color text\+Color, Font font=Font\+::\+Regular)
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \hyperlink{class_s_d_l_wrapper_a8688bdcb4c18bf2282535969a57bf2d2}{load\+Texture\+From\+File} (std\+::string path)
+\item 
+void \hyperlink{class_s_d_l_wrapper_adaf6d4024bf1753bf324ef36efb9c909}{load\+Level\+Textures} ()
+\item 
+void \hyperlink{class_s_d_l_wrapper_ae50abcb779f1523e17f3f78fd3f1375d}{unload\+Level\+Textures} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \hyperlink{class_s_d_l_wrapper_a04523181eb3d33d40468dd428def4518}{window}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \hyperlink{class_s_d_l_wrapper_a743f32054f626218636044f2159bf39d}{renderer}
+\item 
+std\+::vector$<$ T\+T\+F\+\_\+\+Font $\ast$ $>$ \hyperlink{class_s_d_l_wrapper_a38b81e2c2a6b5e435b22dbda32d1fb7e}{font\+Vector}
+\item 
+std\+::vector$<$ S\+D\+L\+\_\+\+Texture $\ast$ $>$ \hyperlink{class_s_d_l_wrapper_abfc9572c6ae83287acab8e1c12edf438}{menu\+Texture\+Vector}
+\item 
+std\+::vector$<$ S\+D\+L\+\_\+\+Texture $\ast$ $>$ \hyperlink{class_s_d_l_wrapper_a7dbd8ea0a1d91fcf91aa7e6a467d1344}{level\+Texture\+Vector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_s_d_l_wrapper}{S\+D\+L\+Wrapper} is a class that handles window creation, resource loading and displaying graphics. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{S\+D\+L\+Wrapper()}{SDLWrapper()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+Wrapper\+::\+S\+D\+L\+Wrapper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_s_d_l_wrapper_a32326cfffe91c18fcda5fb8085521f5f}{}\label{class_s_d_l_wrapper_a32326cfffe91c18fcda5fb8085521f5f}
+Default constructor that initializes S\+DL, it\textquotesingle{}s plugins and also loads and stores fonts and textures.
+
+\hyperlink{class_s_d_l_wrapper}{S\+D\+L\+Wrapper} implementation Default constructor that initializes S\+DL, it\textquotesingle{}s plugins and also loads and stores fonts and textures. \index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!````~S\+D\+L\+Wrapper@{$\sim$\+S\+D\+L\+Wrapper}}
+\index{````~S\+D\+L\+Wrapper@{$\sim$\+S\+D\+L\+Wrapper}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{$\sim$\+S\+D\+L\+Wrapper()}{~SDLWrapper()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+Wrapper\+::$\sim$\+S\+D\+L\+Wrapper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_s_d_l_wrapper_aa361c10710aed3fb4fd6a29e426f9306}{}\label{class_s_d_l_wrapper_aa361c10710aed3fb4fd6a29e426f9306}
+Default destructor that unloads every loaded resource and quits initialized S\+DL subsystems. 
+
+\subsection{Member Function Documentation}
+\index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!load\+Level\+Textures@{load\+Level\+Textures}}
+\index{load\+Level\+Textures@{load\+Level\+Textures}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{load\+Level\+Textures()}{loadLevelTextures()}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+D\+L\+Wrapper\+::load\+Level\+Textures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_s_d_l_wrapper_adaf6d4024bf1753bf324ef36efb9c909}{}\label{class_s_d_l_wrapper_adaf6d4024bf1753bf324ef36efb9c909}
+Loads all level textures. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!load\+Texture\+From\+File@{load\+Texture\+From\+File}}
+\index{load\+Texture\+From\+File@{load\+Texture\+From\+File}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{load\+Texture\+From\+File(std\+::string path)}{loadTextureFromFile(std::string path)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Texture $\ast$ S\+D\+L\+Wrapper\+::load\+Texture\+From\+File (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_s_d_l_wrapper_a8688bdcb4c18bf2282535969a57bf2d2}{}\label{class_s_d_l_wrapper_a8688bdcb4c18bf2282535969a57bf2d2}
+Loads texture from file. 
+\begin{DoxyParams}{Parameters}
+{\em path} & string with path to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+D\+L\+\_\+\+Texture$\ast$ a pointer to loaded texture 
+\end{DoxyReturn}
+\index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!load\+Texture\+From\+Rendered\+Text@{load\+Texture\+From\+Rendered\+Text}}
+\index{load\+Texture\+From\+Rendered\+Text@{load\+Texture\+From\+Rendered\+Text}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{load\+Texture\+From\+Rendered\+Text(std\+::string texture\+Text, S\+D\+L\+\_\+\+Color text\+Color, Font font=\+Font\+::\+Regular)}{loadTextureFromRenderedText(std::string textureText, SDL_Color textColor, Font font=Font::Regular)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Texture $\ast$ S\+D\+L\+Wrapper\+::load\+Texture\+From\+Rendered\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{texture\+Text, }
+\item[{S\+D\+L\+\_\+\+Color}]{text\+Color, }
+\item[{Font}]{font = {\ttfamily Font\+:\+:Regular}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_s_d_l_wrapper_a80231a7b46fc17ee95742cff2d87a077}{}\label{class_s_d_l_wrapper_a80231a7b46fc17ee95742cff2d87a077}
+Loads texture from rendered text. 
+\begin{DoxyParams}{Parameters}
+{\em texture\+Text} & string with text to render \\
+\hline
+{\em text\+Color} & color of text \\
+\hline
+{\em font} & which font to use. Defaults to Font\+::\+Regular \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+D\+L\+\_\+\+Texture$\ast$ a pointer to loaded texture 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Font 
+\end{DoxySeeAlso}
+\index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!unload\+Level\+Textures@{unload\+Level\+Textures}}
+\index{unload\+Level\+Textures@{unload\+Level\+Textures}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{unload\+Level\+Textures()}{unloadLevelTextures()}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+D\+L\+Wrapper\+::unload\+Level\+Textures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_s_d_l_wrapper_ae50abcb779f1523e17f3f78fd3f1375d}{}\label{class_s_d_l_wrapper_ae50abcb779f1523e17f3f78fd3f1375d}
+Unloads all level textures. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!font\+Vector@{font\+Vector}}
+\index{font\+Vector@{font\+Vector}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{font\+Vector}{fontVector}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$T\+T\+F\+\_\+\+Font$\ast$$>$ S\+D\+L\+Wrapper\+::font\+Vector}\hypertarget{class_s_d_l_wrapper_a38b81e2c2a6b5e435b22dbda32d1fb7e}{}\label{class_s_d_l_wrapper_a38b81e2c2a6b5e435b22dbda32d1fb7e}
+Vector that stores loaded fonts. \index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!level\+Texture\+Vector@{level\+Texture\+Vector}}
+\index{level\+Texture\+Vector@{level\+Texture\+Vector}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{level\+Texture\+Vector}{levelTextureVector}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$S\+D\+L\+\_\+\+Texture$\ast$$>$ S\+D\+L\+Wrapper\+::level\+Texture\+Vector}\hypertarget{class_s_d_l_wrapper_a7dbd8ea0a1d91fcf91aa7e6a467d1344}{}\label{class_s_d_l_wrapper_a7dbd8ea0a1d91fcf91aa7e6a467d1344}
+Vector that stores loaded level textures. \index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!menu\+Texture\+Vector@{menu\+Texture\+Vector}}
+\index{menu\+Texture\+Vector@{menu\+Texture\+Vector}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{menu\+Texture\+Vector}{menuTextureVector}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$S\+D\+L\+\_\+\+Texture$\ast$$>$ S\+D\+L\+Wrapper\+::menu\+Texture\+Vector}\hypertarget{class_s_d_l_wrapper_abfc9572c6ae83287acab8e1c12edf438}{}\label{class_s_d_l_wrapper_abfc9572c6ae83287acab8e1c12edf438}
+Vector that stores loaded UI textures. \index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!renderer@{renderer}}
+\index{renderer@{renderer}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{renderer}{renderer}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Renderer$\ast$ S\+D\+L\+Wrapper\+::renderer}\hypertarget{class_s_d_l_wrapper_a743f32054f626218636044f2159bf39d}{}\label{class_s_d_l_wrapper_a743f32054f626218636044f2159bf39d}
+S\+DL renderer handle. \index{S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}!window@{window}}
+\index{window@{window}!S\+D\+L\+Wrapper@{S\+D\+L\+Wrapper}}
+\subsubsection[{\texorpdfstring{window}{window}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Window$\ast$ S\+D\+L\+Wrapper\+::window}\hypertarget{class_s_d_l_wrapper_a04523181eb3d33d40468dd428def4518}{}\label{class_s_d_l_wrapper_a04523181eb3d33d40468dd428def4518}
+S\+DL window handle. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/S\+D\+L\+Wrapper.\+h\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/S\+D\+L\+Wrapper.\+cpp\end{DoxyCompactItemize}

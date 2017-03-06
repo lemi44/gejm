@@ -1,0 +1,121 @@
+\hypertarget{class_player_creature}{}\section{Player\+Creature Class Reference}
+\label{class_player_creature}\index{Player\+Creature@{Player\+Creature}}
+
+
+{\ttfamily \#include $<$Player\+Creature.\+h$>$}
+
+Inheritance diagram for Player\+Creature\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_player_creature}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_creature_a2b9afd7492db1bbe07f71694206156fe}{Player\+Creature} (double \hyperlink{class_object_a02010c1708632be33a760486b1f648f8}{x}=0.\+0, double \hyperlink{class_object_a542c4d6094ace575fb4a28f46b9cc6a1}{y}=0.\+0, double \hyperlink{class_object_a3afad0ab476968e517b6f48c2a32719f}{width}=1.\+0, double \hyperlink{class_object_a811bf2cbf614c4f0a3935a83fb639ffd}{height}=1.\+0, Uint8 \hyperlink{class_creature_a312bc862a499a3955e74b5215d3bd1c5}{health}=3)
+\item 
+\hyperlink{class_player_creature_ab11d768b4acd8a72743439db9778569d}{$\sim$\+Player\+Creature} ()
+\item 
+void \hyperlink{class_player_creature_a01695a024ca8239d77940df317b1d880}{on\+Collision} (\hyperlink{class_solid_object}{Solid\+Object} $\ast$collider) override
+\item 
+Uint32 \hyperlink{class_player_creature_a8a36503e510bbd6795031385e30ec362}{get\+Coins} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_player_creature}{Player\+Creature} is a \hyperlink{class_creature}{Creature} that should be controlled by Player. It derives from \hyperlink{class_creature}{Creature}. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Player\+Creature@{Player\+Creature}!Player\+Creature@{Player\+Creature}}
+\index{Player\+Creature@{Player\+Creature}!Player\+Creature@{Player\+Creature}}
+\subsubsection[{\texorpdfstring{Player\+Creature(double x=0.\+0, double y=0.\+0, double width=1.\+0, double height=1.\+0, Uint8 health=3)}{PlayerCreature(double x=0.0, double y=0.0, double width=1.0, double height=1.0, Uint8 health=3)}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+Creature\+::\+Player\+Creature (
+\begin{DoxyParamCaption}
+\item[{double}]{x = {\ttfamily 0.0}, }
+\item[{double}]{y = {\ttfamily 0.0}, }
+\item[{double}]{width = {\ttfamily 1.0}, }
+\item[{double}]{height = {\ttfamily 1.0}, }
+\item[{Uint8}]{health = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_creature_a2b9afd7492db1bbe07f71694206156fe}{}\label{class_player_creature_a2b9afd7492db1bbe07f71694206156fe}
+The default constructor of \hyperlink{class_player_creature}{Player\+Creature}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 0.\+0 \\
+\hline
+{\em y} & Y position of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 0.\+0 \\
+\hline
+{\em width} & width of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 1.\+0 \\
+\hline
+{\em height} & height of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 1.\+0 \\
+\hline
+{\em health} & health of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature}
+\end{DoxySeeAlso}
+\hyperlink{class_player_creature}{Player\+Creature} implementation The default constructor of \hyperlink{class_player_creature}{Player\+Creature}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 0.\+0 \\
+\hline
+{\em y} & Y position of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 0.\+0 \\
+\hline
+{\em width} & width of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 1.\+0 \\
+\hline
+{\em height} & height of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 1.\+0 \\
+\hline
+{\em health} & health of \hyperlink{class_player_creature}{Player\+Creature}. Defaults to 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature} 
+\end{DoxySeeAlso}
+\index{Player\+Creature@{Player\+Creature}!````~Player\+Creature@{$\sim$\+Player\+Creature}}
+\index{````~Player\+Creature@{$\sim$\+Player\+Creature}!Player\+Creature@{Player\+Creature}}
+\subsubsection[{\texorpdfstring{$\sim$\+Player\+Creature()}{~PlayerCreature()}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+Creature\+::$\sim$\+Player\+Creature (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_creature_ab11d768b4acd8a72743439db9778569d}{}\label{class_player_creature_ab11d768b4acd8a72743439db9778569d}
+Default destructor 
+
+\subsection{Member Function Documentation}
+\index{Player\+Creature@{Player\+Creature}!get\+Coins@{get\+Coins}}
+\index{get\+Coins@{get\+Coins}!Player\+Creature@{Player\+Creature}}
+\subsubsection[{\texorpdfstring{get\+Coins() const }{getCoins() const }}]{\setlength{\rightskip}{0pt plus 5cm}Uint32 Player\+Creature\+::get\+Coins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_player_creature_a8a36503e510bbd6795031385e30ec362}{}\label{class_player_creature_a8a36503e510bbd6795031385e30ec362}
+Get number of collected coins. \begin{DoxyReturn}{Returns}
+Uint32 
+\end{DoxyReturn}
+\index{Player\+Creature@{Player\+Creature}!on\+Collision@{on\+Collision}}
+\index{on\+Collision@{on\+Collision}!Player\+Creature@{Player\+Creature}}
+\subsubsection[{\texorpdfstring{on\+Collision(\+Solid\+Object $\ast$collider) override}{onCollision(SolidObject *collider) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+Creature\+::on\+Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Solid\+Object} $\ast$}]{collider}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_player_creature_a01695a024ca8239d77940df317b1d880}{}\label{class_player_creature_a01695a024ca8239d77940df317b1d880}
+Function for resolving special cases of collision. If special case is not found, function calls \hyperlink{class_creature}{Creature} implementation of on\+Collision. 
+\begin{DoxyParams}{Parameters}
+{\em collider} & a pointer to a \hyperlink{class_solid_object}{Solid\+Object} with which \hyperlink{class_monster_creature}{Monster\+Creature} is colliding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_creature_a246ee43c5eef1bafa18c88c3a748356e}{Creature}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Player\+Creature.\+h\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Player\+Creature.\+cpp\end{DoxyCompactItemize}

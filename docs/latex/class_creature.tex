@@ -1,0 +1,346 @@
+\hypertarget{class_creature}{}\section{Creature Class Reference}
+\label{class_creature}\index{Creature@{Creature}}
+
+
+{\ttfamily \#include $<$Creature.\+h$>$}
+
+Inheritance diagram for Creature\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_creature}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_creature_a159a60797dd021854f552fa5359c160c}{Creature} (double \hyperlink{class_object_a02010c1708632be33a760486b1f648f8}{x}=0.\+0, double \hyperlink{class_object_a542c4d6094ace575fb4a28f46b9cc6a1}{y}=0.\+0, double \hyperlink{class_object_a3afad0ab476968e517b6f48c2a32719f}{width}=1.\+0, double \hyperlink{class_object_a811bf2cbf614c4f0a3935a83fb639ffd}{height}=1.\+0, Uint8 \hyperlink{class_creature_a312bc862a499a3955e74b5215d3bd1c5}{health}=1)
+\item 
+virtual \hyperlink{class_creature_aa991b23f4813fbdb6f875204ed49814d}{$\sim$\+Creature} ()
+\item 
+void \hyperlink{class_creature_ab0f46259c6eafea41ed737a67954b1d2}{save\+Previous} () override
+\item 
+void \hyperlink{class_creature_a2fe01ed4304c4ca0957f9ea4e7e958e0}{move\+By} (double \hyperlink{class_object_a02010c1708632be33a760486b1f648f8}{x}, double \hyperlink{class_object_a542c4d6094ace575fb4a28f46b9cc6a1}{y})
+\item 
+void \hyperlink{class_creature_a34b51efbd2bb90ef56c71bd497b5d49a}{hurt} (Sint8 damage)
+\item 
+void \hyperlink{class_creature_ad2d2745b1075df6ecc540e9e52bfb00a}{set\+Speed\+Vector} (double \hyperlink{class_object_a02010c1708632be33a760486b1f648f8}{x}, double \hyperlink{class_object_a542c4d6094ace575fb4a28f46b9cc6a1}{y})
+\item 
+void \hyperlink{class_creature_a6b4b0da1e5959329ce54f2ed0a301a31}{add\+Collision\+State} (Collision\+State state)
+\item 
+virtual void \hyperlink{class_creature_a246ee43c5eef1bafa18c88c3a748356e}{on\+Collision} (\hyperlink{class_solid_object}{Solid\+Object} $\ast$collider)
+\item 
+Uint8 \hyperlink{class_creature_a23349b0b68b4ffb0e90b71e4bcc38909}{get\+Health} () const 
+\item 
+bool \hyperlink{class_creature_a7d4dc38f5b1dad4258af115ecefdb064}{get\+Is\+Alive} () const 
+\item 
+bool \hyperlink{class_creature_a9fe784b4d6e9366063d623a30614b5c5}{get\+Is\+Invulnerable} () const 
+\item 
+bool \hyperlink{class_creature_a3462b44cfb1090751e5004b1ee6c632e}{get\+Was\+Invulnerable} () const 
+\item 
+double \hyperlink{class_creature_ad71518008ffb52d310315bdc31dd1aa5}{get\+SpeedX} () const 
+\item 
+double \hyperlink{class_creature_aeefbce5184dca2daab05559eb03d56eb}{get\+SpeedY} () const 
+\item 
+Collision\+State \hyperlink{class_creature_a2d7a9d6d9d7cf6be27de6ff8ff4c33d6}{get\+Collision\+State} () const 
+\item 
+\hyperlink{class_creature}{Creature} \& \hyperlink{class_creature_a5aeab5f0ed4a29bf22bce9b3383a54d8}{operator=} (\hyperlink{class_creature}{Creature} const \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Uint8 \hyperlink{class_creature_a312bc862a499a3955e74b5215d3bd1c5}{health}
+\item 
+Uint32 const \hyperlink{class_creature_a430d7d130b9a4466faf8850322831671}{inv\+Frames}
+\item 
+bool \hyperlink{class_creature_a346917307824f74d66ed73751c32f4a2}{is\+Alive}
+\item 
+bool \hyperlink{class_creature_a5aaf90f9ca19a84d1b66016df689a735}{is\+Invulnerable}
+\item 
+bool \hyperlink{class_creature_a344b50a9000c1ff0396c5d2ef771417e}{was\+Invulnerable}
+\item 
+double \hyperlink{class_creature_acc2fb7ea8dd1145c4f6c9d9dc26d200b}{speedX}
+\item 
+double \hyperlink{class_creature_a13a98588ff3cc78bb9c2e05da185a843}{speedY}
+\item 
+Collision\+State \hyperlink{class_creature_af39ddb6063b910255b0f9c5208a22762}{collision\+State}
+\item 
+\hyperlink{class_timer}{Timer} \hyperlink{class_creature_aeda246cf3c5e6025c91a02b72d4561ee}{inv\+Timer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_creature}{Creature} is the base class of all creatures that can be possessed by players or AI. They are the physical representations of players and creatures in a level. It derives from \hyperlink{class_solid_object}{Solid\+Object}. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solid_object}{Solid\+Object} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Creature@{Creature}!Creature@{Creature}}
+\index{Creature@{Creature}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{Creature(double x=0.\+0, double y=0.\+0, double width=1.\+0, double height=1.\+0, Uint8 health=1)}{Creature(double x=0.0, double y=0.0, double width=1.0, double height=1.0, Uint8 health=1)}}]{\setlength{\rightskip}{0pt plus 5cm}Creature\+::\+Creature (
+\begin{DoxyParamCaption}
+\item[{double}]{x = {\ttfamily 0.0}, }
+\item[{double}]{y = {\ttfamily 0.0}, }
+\item[{double}]{width = {\ttfamily 1.0}, }
+\item[{double}]{height = {\ttfamily 1.0}, }
+\item[{Uint8}]{health = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_creature_a159a60797dd021854f552fa5359c160c}{}\label{class_creature_a159a60797dd021854f552fa5359c160c}
+The default constructor of \hyperlink{class_creature}{Creature}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of \hyperlink{class_creature}{Creature}. Defaults to 0.\+0 \\
+\hline
+{\em y} & Y position of \hyperlink{class_creature}{Creature}. Defaults to 0.\+0 \\
+\hline
+{\em width} & width of \hyperlink{class_creature}{Creature}. Defaults to 1.\+0 \\
+\hline
+{\em height} & height of \hyperlink{class_creature}{Creature}. Defaults to 1.\+0 \\
+\hline
+{\em health} & health of \hyperlink{class_creature}{Creature}. Defaults to 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_solid_object}{Solid\+Object} 
+
+\hyperlink{class_creature_a312bc862a499a3955e74b5215d3bd1c5}{health}
+\end{DoxySeeAlso}
+\hyperlink{class_creature}{Creature} implementation The default constructor of \hyperlink{class_creature}{Creature}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of \hyperlink{class_creature}{Creature}. Defaults to 0.\+0 \\
+\hline
+{\em y} & Y position of \hyperlink{class_creature}{Creature}. Defaults to 0.\+0 \\
+\hline
+{\em width} & width of \hyperlink{class_creature}{Creature}. Defaults to 1.\+0 \\
+\hline
+{\em height} & height of \hyperlink{class_creature}{Creature}. Defaults to 1.\+0 \\
+\hline
+{\em health} & health of \hyperlink{class_creature}{Creature}. Defaults to 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_solid_object}{Solid\+Object} 
+
+\hyperlink{class_creature_a312bc862a499a3955e74b5215d3bd1c5}{health} 
+\end{DoxySeeAlso}
+\index{Creature@{Creature}!````~Creature@{$\sim$\+Creature}}
+\index{````~Creature@{$\sim$\+Creature}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{$\sim$\+Creature()}{~Creature()}}]{\setlength{\rightskip}{0pt plus 5cm}Creature\+::$\sim$\+Creature (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_creature_aa991b23f4813fbdb6f875204ed49814d}{}\label{class_creature_aa991b23f4813fbdb6f875204ed49814d}
+The default destructor. 
+
+\subsection{Member Function Documentation}
+\index{Creature@{Creature}!add\+Collision\+State@{add\+Collision\+State}}
+\index{add\+Collision\+State@{add\+Collision\+State}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{add\+Collision\+State(\+Collision\+State state)}{addCollisionState(CollisionState state)}}]{\setlength{\rightskip}{0pt plus 5cm}void Creature\+::add\+Collision\+State (
+\begin{DoxyParamCaption}
+\item[{Collision\+State}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{class_creature_a6b4b0da1e5959329ce54f2ed0a301a31}{}\label{class_creature_a6b4b0da1e5959329ce54f2ed0a301a31}
+Changes current collision\+State of \hyperlink{class_creature}{Creature} by OR assignment of parameter. 
+\begin{DoxyParams}{Parameters}
+{\em state} & Collision\+State to be added to member collision\+State \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Creature@{Creature}!get\+Collision\+State@{get\+Collision\+State}}
+\index{get\+Collision\+State@{get\+Collision\+State}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{get\+Collision\+State() const }{getCollisionState() const }}]{\setlength{\rightskip}{0pt plus 5cm}Collision\+State Creature\+::get\+Collision\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_creature_a2d7a9d6d9d7cf6be27de6ff8ff4c33d6}{}\label{class_creature_a2d7a9d6d9d7cf6be27de6ff8ff4c33d6}
+Get current collision\+State of \hyperlink{class_creature}{Creature}. \begin{DoxyReturn}{Returns}
+Collision\+State 
+\end{DoxyReturn}
+\index{Creature@{Creature}!get\+Health@{get\+Health}}
+\index{get\+Health@{get\+Health}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{get\+Health() const }{getHealth() const }}]{\setlength{\rightskip}{0pt plus 5cm}Uint8 Creature\+::get\+Health (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_creature_a23349b0b68b4ffb0e90b71e4bcc38909}{}\label{class_creature_a23349b0b68b4ffb0e90b71e4bcc38909}
+Get current health of \hyperlink{class_creature}{Creature}. \begin{DoxyReturn}{Returns}
+Uint8 
+\end{DoxyReturn}
+\index{Creature@{Creature}!get\+Is\+Alive@{get\+Is\+Alive}}
+\index{get\+Is\+Alive@{get\+Is\+Alive}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{get\+Is\+Alive() const }{getIsAlive() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Creature\+::get\+Is\+Alive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_creature_a7d4dc38f5b1dad4258af115ecefdb064}{}\label{class_creature_a7d4dc38f5b1dad4258af115ecefdb064}
+Check if \hyperlink{class_creature}{Creature} is alive. \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{Creature@{Creature}!get\+Is\+Invulnerable@{get\+Is\+Invulnerable}}
+\index{get\+Is\+Invulnerable@{get\+Is\+Invulnerable}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{get\+Is\+Invulnerable() const }{getIsInvulnerable() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Creature\+::get\+Is\+Invulnerable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_creature_a9fe784b4d6e9366063d623a30614b5c5}{}\label{class_creature_a9fe784b4d6e9366063d623a30614b5c5}
+Check if \hyperlink{class_creature}{Creature} is invulnerable. \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{Creature@{Creature}!get\+SpeedX@{get\+SpeedX}}
+\index{get\+SpeedX@{get\+SpeedX}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{get\+Speed\+X() const }{getSpeedX() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Creature\+::get\+SpeedX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_creature_ad71518008ffb52d310315bdc31dd1aa5}{}\label{class_creature_ad71518008ffb52d310315bdc31dd1aa5}
+Get current velocity of \hyperlink{class_creature}{Creature} on X-\/axis. \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\index{Creature@{Creature}!get\+SpeedY@{get\+SpeedY}}
+\index{get\+SpeedY@{get\+SpeedY}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{get\+Speed\+Y() const }{getSpeedY() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Creature\+::get\+SpeedY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_creature_aeefbce5184dca2daab05559eb03d56eb}{}\label{class_creature_aeefbce5184dca2daab05559eb03d56eb}
+Get current velocity of \hyperlink{class_creature}{Creature} on Y-\/axis. \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\index{Creature@{Creature}!get\+Was\+Invulnerable@{get\+Was\+Invulnerable}}
+\index{get\+Was\+Invulnerable@{get\+Was\+Invulnerable}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{get\+Was\+Invulnerable() const }{getWasInvulnerable() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Creature\+::get\+Was\+Invulnerable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_creature_a3462b44cfb1090751e5004b1ee6c632e}{}\label{class_creature_a3462b44cfb1090751e5004b1ee6c632e}
+Check if \hyperlink{class_creature}{Creature} was invulnerable. \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{Creature@{Creature}!hurt@{hurt}}
+\index{hurt@{hurt}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{hurt(\+Sint8 damage)}{hurt(Sint8 damage)}}]{\setlength{\rightskip}{0pt plus 5cm}void Creature\+::hurt (
+\begin{DoxyParamCaption}
+\item[{Sint8}]{damage}
+\end{DoxyParamCaption}
+)}\hypertarget{class_creature_a34b51efbd2bb90ef56c71bd497b5d49a}{}\label{class_creature_a34b51efbd2bb90ef56c71bd497b5d49a}
+Changes health of \hyperlink{class_creature}{Creature}. If damage equals 127 or is less than or equal to 0 then it ignores invulnerability. Else deal damage only if \hyperlink{class_creature}{Creature} is not Invulnerable and set invulnerability of \hyperlink{class_creature}{Creature}. 
+\begin{DoxyParams}{Parameters}
+{\em damage} & how much damage \hyperlink{class_creature}{Creature} takes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Creature@{Creature}!move\+By@{move\+By}}
+\index{move\+By@{move\+By}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{move\+By(double x, double y)}{moveBy(double x, double y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Creature\+::move\+By (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_creature_a2fe01ed4304c4ca0957f9ea4e7e958e0}{}\label{class_creature_a2fe01ed4304c4ca0957f9ea4e7e958e0}
+Changes relatively current position of \hyperlink{class_creature}{Creature}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & relative change of position on X axis \\
+\hline
+{\em y} & relative change of position on Y axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Creature@{Creature}!on\+Collision@{on\+Collision}}
+\index{on\+Collision@{on\+Collision}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{on\+Collision(\+Solid\+Object $\ast$collider)}{onCollision(SolidObject *collider)}}]{\setlength{\rightskip}{0pt plus 5cm}void Creature\+::on\+Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Solid\+Object} $\ast$}]{collider}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_creature_a246ee43c5eef1bafa18c88c3a748356e}{}\label{class_creature_a246ee43c5eef1bafa18c88c3a748356e}
+Virtual function for resolving collision. Default implementation ignores \hyperlink{class_coin}{Coin} and \hyperlink{class_trigger}{Trigger} and solves collision with \hyperlink{class_solid_object}{Solid\+Object}. 
+\begin{DoxyParams}{Parameters}
+{\em collider} & a pointer to a \hyperlink{class_solid_object}{Solid\+Object} with which \hyperlink{class_creature}{Creature} is colliding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_monster_creature_ab7328cb9afd4b8fe1bacbc958ca9cc39}{Monster\+Creature}, and \hyperlink{class_player_creature_a01695a024ca8239d77940df317b1d880}{Player\+Creature}.
+
+\index{Creature@{Creature}!operator=@{operator=}}
+\index{operator=@{operator=}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{operator=(\+Creature const \&)=delete}{operator=(Creature const &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Creature}\& Creature\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Creature} const \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_creature_a5aeab5f0ed4a29bf22bce9b3383a54d8}{}\label{class_creature_a5aeab5f0ed4a29bf22bce9b3383a54d8}
+Assignment operator is deleted because of constant member initialized on Construction. \index{Creature@{Creature}!save\+Previous@{save\+Previous}}
+\index{save\+Previous@{save\+Previous}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{save\+Previous() override}{savePrevious() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Creature\+::save\+Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_creature_ab0f46259c6eafea41ed737a67954b1d2}{}\label{class_creature_ab0f46259c6eafea41ed737a67954b1d2}
+Changes members that hold information about previous step to hold current state of \hyperlink{class_creature}{Creature}. Also checks if inv\+Timer has passed and disables invulnerability. Sets current collision\+State to no\+Collision. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_object_a32051814ea5da4026c5f9517ddb6f212}{Object}.
+
+\index{Creature@{Creature}!set\+Speed\+Vector@{set\+Speed\+Vector}}
+\index{set\+Speed\+Vector@{set\+Speed\+Vector}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{set\+Speed\+Vector(double x, double y)}{setSpeedVector(double x, double y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Creature\+::set\+Speed\+Vector (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_creature_ad2d2745b1075df6ecc540e9e52bfb00a}{}\label{class_creature_ad2d2745b1075df6ecc540e9e52bfb00a}
+Changes current velocity vector of \hyperlink{class_creature}{Creature}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & new velocity value on X axis \\
+\hline
+{\em y} & new velocity value on Y axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Creature@{Creature}!collision\+State@{collision\+State}}
+\index{collision\+State@{collision\+State}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{collision\+State}{collisionState}}]{\setlength{\rightskip}{0pt plus 5cm}Collision\+State Creature\+::collision\+State\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_creature_af39ddb6063b910255b0f9c5208a22762}{}\label{class_creature_af39ddb6063b910255b0f9c5208a22762}
+Current Collision\+State of \hyperlink{class_creature}{Creature}. \index{Creature@{Creature}!health@{health}}
+\index{health@{health}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{health}{health}}]{\setlength{\rightskip}{0pt plus 5cm}Uint8 Creature\+::health\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_creature_a312bc862a499a3955e74b5215d3bd1c5}{}\label{class_creature_a312bc862a499a3955e74b5215d3bd1c5}
+Current health of \hyperlink{class_creature}{Creature}. \index{Creature@{Creature}!inv\+Frames@{inv\+Frames}}
+\index{inv\+Frames@{inv\+Frames}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{inv\+Frames}{invFrames}}]{\setlength{\rightskip}{0pt plus 5cm}Uint32 const Creature\+::inv\+Frames\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_creature_a430d7d130b9a4466faf8850322831671}{}\label{class_creature_a430d7d130b9a4466faf8850322831671}
+Constant number of invulnerability frames of \hyperlink{class_creature}{Creature}. \index{Creature@{Creature}!inv\+Timer@{inv\+Timer}}
+\index{inv\+Timer@{inv\+Timer}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{inv\+Timer}{invTimer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer} Creature\+::inv\+Timer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_creature_aeda246cf3c5e6025c91a02b72d4561ee}{}\label{class_creature_aeda246cf3c5e6025c91a02b72d4561ee}
+\hyperlink{class_timer}{Timer} used to calculate a period of invulnerability of \hyperlink{class_creature}{Creature}. \index{Creature@{Creature}!is\+Alive@{is\+Alive}}
+\index{is\+Alive@{is\+Alive}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{is\+Alive}{isAlive}}]{\setlength{\rightskip}{0pt plus 5cm}bool Creature\+::is\+Alive\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_creature_a346917307824f74d66ed73751c32f4a2}{}\label{class_creature_a346917307824f74d66ed73751c32f4a2}
+Current liveness of \hyperlink{class_creature}{Creature}. \index{Creature@{Creature}!is\+Invulnerable@{is\+Invulnerable}}
+\index{is\+Invulnerable@{is\+Invulnerable}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{is\+Invulnerable}{isInvulnerable}}]{\setlength{\rightskip}{0pt plus 5cm}bool Creature\+::is\+Invulnerable\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_creature_a5aaf90f9ca19a84d1b66016df689a735}{}\label{class_creature_a5aaf90f9ca19a84d1b66016df689a735}
+Current state of invulnerability of \hyperlink{class_creature}{Creature}. \index{Creature@{Creature}!speedX@{speedX}}
+\index{speedX@{speedX}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{speedX}{speedX}}]{\setlength{\rightskip}{0pt plus 5cm}double Creature\+::speedX\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_creature_acc2fb7ea8dd1145c4f6c9d9dc26d200b}{}\label{class_creature_acc2fb7ea8dd1145c4f6c9d9dc26d200b}
+Current velocity on X-\/axis of \hyperlink{class_creature}{Creature}. \index{Creature@{Creature}!speedY@{speedY}}
+\index{speedY@{speedY}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{speedY}{speedY}}]{\setlength{\rightskip}{0pt plus 5cm}double Creature\+::speedY\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_creature_a13a98588ff3cc78bb9c2e05da185a843}{}\label{class_creature_a13a98588ff3cc78bb9c2e05da185a843}
+Current velocity on Y-\/axis of \hyperlink{class_creature}{Creature}. \index{Creature@{Creature}!was\+Invulnerable@{was\+Invulnerable}}
+\index{was\+Invulnerable@{was\+Invulnerable}!Creature@{Creature}}
+\subsubsection[{\texorpdfstring{was\+Invulnerable}{wasInvulnerable}}]{\setlength{\rightskip}{0pt plus 5cm}bool Creature\+::was\+Invulnerable\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_creature_a344b50a9000c1ff0396c5d2ef771417e}{}\label{class_creature_a344b50a9000c1ff0396c5d2ef771417e}
+Previous state of invulnerability of \hyperlink{class_creature}{Creature}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Creature.\+h\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Creature.\+cpp\end{DoxyCompactItemize}

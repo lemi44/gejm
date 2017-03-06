@@ -1,0 +1,117 @@
+\hypertarget{class_player_controller}{}\section{Player\+Controller Class Reference}
+\label{class_player_controller}\index{Player\+Controller@{Player\+Controller}}
+
+
+{\ttfamily \#include $<$Player\+Controller.\+h$>$}
+
+Inheritance diagram for Player\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_controller_a7bbc210a0a74324d106c9cafc66461cf}{Player\+Controller} (\hyperlink{class_player_creature}{Player\+Creature} $\ast$\hyperlink{class_controller_a54982a6e6ceaafdd59d72ddd7df013a1}{creature})
+\item 
+\hyperlink{class_player_controller_a27b597bc2dbe06e2464dea6cdb3fac96}{$\sim$\+Player\+Controller} ()
+\item 
+void \hyperlink{class_player_controller_acf2bb7065e2f16d9fbc312a54c384913}{jump} ()
+\item 
+void \hyperlink{class_player_controller_ab8fde5836dad1fc4dce56f12b50daf4b}{control} () override
+\item 
+\hyperlink{class_player_controller}{Player\+Controller} \& \hyperlink{class_player_controller_a28e9a35fa382d4db15c3445ef9217b03}{operator=} (\hyperlink{class_player_controller}{Player\+Controller} const \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_player_controller}{Player\+Controller} is a special \hyperlink{class_controller}{Controller} that takes interprets player input. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Player\+Controller@{Player\+Controller}!Player\+Controller@{Player\+Controller}}
+\index{Player\+Controller@{Player\+Controller}!Player\+Controller@{Player\+Controller}}
+\subsubsection[{\texorpdfstring{Player\+Controller(\+Player\+Creature $\ast$creature)}{PlayerController(PlayerCreature *creature)}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+Controller\+::\+Player\+Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf Player\+Creature} $\ast$}]{creature}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_controller_a7bbc210a0a74324d106c9cafc66461cf}{}\label{class_player_controller_a7bbc210a0a74324d106c9cafc66461cf}
+The default constructor with \hyperlink{class_player_creature}{Player\+Creature} possesion. 
+\begin{DoxyParams}{Parameters}
+{\em creature} & association of \hyperlink{class_creature}{Creature} object \\
+\hline
+{\em max\+Speed} & an absolute value of a maximum horizontal velocity that \hyperlink{class_player_controller}{Player\+Controller} should set \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_player_creature}{Player\+Creature} 
+
+\hyperlink{class_controller}{Controller}
+\end{DoxySeeAlso}
+\hyperlink{class_player_controller}{Player\+Controller} implementation The default constructor with \hyperlink{class_player_creature}{Player\+Creature} possesion. 
+\begin{DoxyParams}{Parameters}
+{\em creature} & association of \hyperlink{class_creature}{Creature} object \\
+\hline
+{\em max\+Speed} & an absolute value of a maximum horizontal velocity that \hyperlink{class_player_controller}{Player\+Controller} should set \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_player_creature}{Player\+Creature} 
+
+\hyperlink{class_controller}{Controller} 
+\end{DoxySeeAlso}
+\index{Player\+Controller@{Player\+Controller}!````~Player\+Controller@{$\sim$\+Player\+Controller}}
+\index{````~Player\+Controller@{$\sim$\+Player\+Controller}!Player\+Controller@{Player\+Controller}}
+\subsubsection[{\texorpdfstring{$\sim$\+Player\+Controller()}{~PlayerController()}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+Controller\+::$\sim$\+Player\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_controller_a27b597bc2dbe06e2464dea6cdb3fac96}{}\label{class_player_controller_a27b597bc2dbe06e2464dea6cdb3fac96}
+The default destructor. 
+
+\subsection{Member Function Documentation}
+\index{Player\+Controller@{Player\+Controller}!control@{control}}
+\index{control@{control}!Player\+Controller@{Player\+Controller}}
+\subsubsection[{\texorpdfstring{control() override}{control() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+Controller\+::control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_player_controller_ab8fde5836dad1fc4dce56f12b50daf4b}{}\label{class_player_controller_ab8fde5836dad1fc4dce56f12b50daf4b}
+An implementation of how to control associated \hyperlink{class_player_creature}{Player\+Creature}. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_player_creature}{Player\+Creature} 
+
+\hyperlink{class_controller}{Controller} 
+
+\hyperlink{class_player_controller_acf2bb7065e2f16d9fbc312a54c384913}{jump()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_controller_a018a5dbae5b2f28fd65a4ebfa1c1ba13}{Controller}.
+
+\index{Player\+Controller@{Player\+Controller}!jump@{jump}}
+\index{jump@{jump}!Player\+Controller@{Player\+Controller}}
+\subsubsection[{\texorpdfstring{jump()}{jump()}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+Controller\+::jump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_controller_acf2bb7065e2f16d9fbc312a54c384913}{}\label{class_player_controller_acf2bb7065e2f16d9fbc312a54c384913}
+Tell controlled \hyperlink{class_player_creature}{Player\+Creature} to jump. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Player\+Controller@{Player\+Controller}!operator=@{operator=}}
+\index{operator=@{operator=}!Player\+Controller@{Player\+Controller}}
+\subsubsection[{\texorpdfstring{operator=(\+Player\+Controller const \&)=delete}{operator=(PlayerController const &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player\+Controller}\& Player\+Controller\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Player\+Controller} const \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_player_controller_a28e9a35fa382d4db15c3445ef9217b03}{}\label{class_player_controller_a28e9a35fa382d4db15c3445ef9217b03}
+Assignment operator is deleted because \hyperlink{class_player_controller}{Player\+Controller} has constant variable. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Player\+Controller.\+h\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Player\+Controller.\+cpp\end{DoxyCompactItemize}

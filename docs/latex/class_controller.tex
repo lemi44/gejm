@@ -1,0 +1,206 @@
+\hypertarget{class_controller}{}\section{Controller Class Reference}
+\label{class_controller}\index{Controller@{Controller}}
+
+
+{\ttfamily \#include $<$Controller.\+h$>$}
+
+Inheritance diagram for Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_controller_a0153b917395932c35fedd3a39ad98a35}{Controller} (\hyperlink{class_creature}{Creature} $\ast$\hyperlink{class_controller_a54982a6e6ceaafdd59d72ddd7df013a1}{creature}, double \hyperlink{class_controller_ac16d67602af82582f06ffeaf35fa9337}{max\+Speed}=1.\+0)
+\item 
+virtual \hyperlink{class_controller_a0ab87934c4f7a266cfdb86e0f36bc1b5}{$\sim$\+Controller} ()
+\item 
+virtual void \hyperlink{class_controller_a018a5dbae5b2f28fd65a4ebfa1c1ba13}{control} ()
+\item 
+\hyperlink{class_creature}{Creature} $\ast$ \hyperlink{class_controller_a3bcad387f18cbd9270a6fc76ee310118}{get\+Creature} ()
+\item 
+Controller\+State \hyperlink{class_controller_a8d8b63439afced3d1743e957c4d239fd}{get\+Controller\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_controller_a79faaf34a18f047a0be45a89c0dc3c09}{go\+Left} ()
+\item 
+void \hyperlink{class_controller_ad388f36ef903a876370e4ec9b3bae840}{go\+Right} ()
+\item 
+void \hyperlink{class_controller_a64661c1d8dd429a69fca4b619b0e7a9e}{stop\+Going} ()
+\item 
+\hyperlink{class_controller}{Controller} \& \hyperlink{class_controller_af62599f482a8a4faf9e73429c7b1e768}{operator=} (\hyperlink{class_controller}{Controller} const \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_creature}{Creature} $\ast$ \hyperlink{class_controller_a54982a6e6ceaafdd59d72ddd7df013a1}{creature}
+\item 
+Controller\+State \hyperlink{class_controller_a8300a08c95fc3c2d0804280fd0a4a673}{controller\+State}
+\item 
+double const \hyperlink{class_controller_ac16d67602af82582f06ffeaf35fa9337}{max\+Speed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_controller}{Controller} is a base class that can control a \hyperlink{class_creature}{Creature}. Default implementation move in one direction then change it after collision. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Controller@{Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{Controller(\+Creature $\ast$creature, double max\+Speed=1.\+0)}{Controller(Creature *creature, double maxSpeed=1.0)}}]{\setlength{\rightskip}{0pt plus 5cm}Controller\+::\+Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf Creature} $\ast$}]{creature, }
+\item[{double}]{max\+Speed = {\ttfamily 1.0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_controller_a0153b917395932c35fedd3a39ad98a35}{}\label{class_controller_a0153b917395932c35fedd3a39ad98a35}
+The default constructor with \hyperlink{class_creature}{Creature} possesion. 
+\begin{DoxyParams}{Parameters}
+{\em creature} & association of \hyperlink{class_creature}{Creature} object \\
+\hline
+{\em max\+Speed} & an absolute value of a maximum horizontal velocity that \hyperlink{class_controller}{Controller} should set \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature} 
+
+\hyperlink{class_controller_ac16d67602af82582f06ffeaf35fa9337}{max\+Speed}
+\end{DoxySeeAlso}
+\hyperlink{class_controller}{Controller} implementation The default constructor with \hyperlink{class_creature}{Creature} possesion. 
+\begin{DoxyParams}{Parameters}
+{\em creature} & association of \hyperlink{class_creature}{Creature} object. \\
+\hline
+{\em max\+Speed} & an absolute value of a maximum horizontal velocity that \hyperlink{class_controller}{Controller} should set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature} 
+
+\hyperlink{class_controller_ac16d67602af82582f06ffeaf35fa9337}{max\+Speed} 
+\end{DoxySeeAlso}
+\index{Controller@{Controller}!````~Controller@{$\sim$\+Controller}}
+\index{````~Controller@{$\sim$\+Controller}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{$\sim$\+Controller()}{~Controller()}}]{\setlength{\rightskip}{0pt plus 5cm}Controller\+::$\sim$\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_controller_a0ab87934c4f7a266cfdb86e0f36bc1b5}{}\label{class_controller_a0ab87934c4f7a266cfdb86e0f36bc1b5}
+The default destructor. 
+
+\subsection{Member Function Documentation}
+\index{Controller@{Controller}!control@{control}}
+\index{control@{control}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{control()}{control()}}]{\setlength{\rightskip}{0pt plus 5cm}void Controller\+::control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_controller_a018a5dbae5b2f28fd65a4ebfa1c1ba13}{}\label{class_controller_a018a5dbae5b2f28fd65a4ebfa1c1ba13}
+A virtual implementation of how to control associated \hyperlink{class_creature}{Creature}. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature} 
+
+\hyperlink{class_controller_a79faaf34a18f047a0be45a89c0dc3c09}{go\+Left()} 
+
+\hyperlink{class_controller_ad388f36ef903a876370e4ec9b3bae840}{go\+Right()} 
+
+\hyperlink{class_controller_a64661c1d8dd429a69fca4b619b0e7a9e}{stop\+Going()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_player_controller_ab8fde5836dad1fc4dce56f12b50daf4b}{Player\+Controller}.
+
+\index{Controller@{Controller}!get\+Controller\+State@{get\+Controller\+State}}
+\index{get\+Controller\+State@{get\+Controller\+State}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{get\+Controller\+State()}{getControllerState()}}]{\setlength{\rightskip}{0pt plus 5cm}Controller\+State Controller\+::get\+Controller\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_controller_a8d8b63439afced3d1743e957c4d239fd}{}\label{class_controller_a8d8b63439afced3d1743e957c4d239fd}
+Get current state of controller \begin{DoxyReturn}{Returns}
+Controller\+State 
+\end{DoxyReturn}
+\index{Controller@{Controller}!get\+Creature@{get\+Creature}}
+\index{get\+Creature@{get\+Creature}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{get\+Creature()}{getCreature()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Creature} $\ast$ Controller\+::get\+Creature (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_controller_a3bcad387f18cbd9270a6fc76ee310118}{}\label{class_controller_a3bcad387f18cbd9270a6fc76ee310118}
+Get associated \hyperlink{class_creature}{Creature}. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Creature$\ast$ a pointer to associated \hyperlink{class_creature}{Creature} 
+\end{DoxyReturn}
+\index{Controller@{Controller}!go\+Left@{go\+Left}}
+\index{go\+Left@{go\+Left}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{go\+Left()}{goLeft()}}]{\setlength{\rightskip}{0pt plus 5cm}void Controller\+::go\+Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_controller_a79faaf34a18f047a0be45a89c0dc3c09}{}\label{class_controller_a79faaf34a18f047a0be45a89c0dc3c09}
+Make associated \hyperlink{class_creature}{Creature} go left. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Controller@{Controller}!go\+Right@{go\+Right}}
+\index{go\+Right@{go\+Right}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{go\+Right()}{goRight()}}]{\setlength{\rightskip}{0pt plus 5cm}void Controller\+::go\+Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_controller_ad388f36ef903a876370e4ec9b3bae840}{}\label{class_controller_ad388f36ef903a876370e4ec9b3bae840}
+Make associated \hyperlink{class_creature}{Creature} go right. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Controller@{Controller}!operator=@{operator=}}
+\index{operator=@{operator=}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{operator=(\+Controller const \&)=delete}{operator=(Controller const &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Controller}\& Controller\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} const \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}\hypertarget{class_controller_af62599f482a8a4faf9e73429c7b1e768}{}\label{class_controller_af62599f482a8a4faf9e73429c7b1e768}
+Assignment operator is deleted because \hyperlink{class_controller}{Controller} has constant variable. \index{Controller@{Controller}!stop\+Going@{stop\+Going}}
+\index{stop\+Going@{stop\+Going}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{stop\+Going()}{stopGoing()}}]{\setlength{\rightskip}{0pt plus 5cm}void Controller\+::stop\+Going (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_controller_a64661c1d8dd429a69fca4b619b0e7a9e}{}\label{class_controller_a64661c1d8dd429a69fca4b619b0e7a9e}
+Make associated \hyperlink{class_creature}{Creature} stop going. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_creature}{Creature} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Controller@{Controller}!controller\+State@{controller\+State}}
+\index{controller\+State@{controller\+State}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{controller\+State}{controllerState}}]{\setlength{\rightskip}{0pt plus 5cm}Controller\+State Controller\+::controller\+State\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_controller_a8300a08c95fc3c2d0804280fd0a4a673}{}\label{class_controller_a8300a08c95fc3c2d0804280fd0a4a673}
+a protected Controller\+State variable \begin{DoxySeeAlso}{See also}
+Controller\+State 
+\end{DoxySeeAlso}
+\index{Controller@{Controller}!creature@{creature}}
+\index{creature@{creature}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{creature}{creature}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Creature}$\ast$ Controller\+::creature\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_controller_a54982a6e6ceaafdd59d72ddd7df013a1}{}\label{class_controller_a54982a6e6ceaafdd59d72ddd7df013a1}
+a protected pointer to associated \hyperlink{class_creature}{Creature} \index{Controller@{Controller}!max\+Speed@{max\+Speed}}
+\index{max\+Speed@{max\+Speed}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{max\+Speed}{maxSpeed}}]{\setlength{\rightskip}{0pt plus 5cm}double const Controller\+::max\+Speed\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_controller_ac16d67602af82582f06ffeaf35fa9337}{}\label{class_controller_ac16d67602af82582f06ffeaf35fa9337}
+an absolute value of a maximum horizontal velocity that \hyperlink{class_controller}{Controller} should set 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Controller.\+h\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Controller.\+cpp\end{DoxyCompactItemize}

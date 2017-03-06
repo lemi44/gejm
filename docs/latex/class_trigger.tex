@@ -1,0 +1,136 @@
+\hypertarget{class_trigger}{}\section{Trigger Class Reference}
+\label{class_trigger}\index{Trigger@{Trigger}}
+
+
+{\ttfamily \#include $<$Trigger.\+h$>$}
+
+Inheritance diagram for Trigger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_trigger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trigger_aa3067e36467650cb24140cee1d66783c}{Trigger} (\hyperlink{class_game}{Game} $\ast$const game\+Object, void(Game\+::$\ast$on\+Trigger)(), void(Game\+::$\ast$on\+Start\+Touch)(), void(Game\+::$\ast$on\+End\+Touch)(), double \hyperlink{class_object_a02010c1708632be33a760486b1f648f8}{x}=0.\+0, double \hyperlink{class_object_a542c4d6094ace575fb4a28f46b9cc6a1}{y}=0.\+0, double \hyperlink{class_object_a3afad0ab476968e517b6f48c2a32719f}{width}=3.\+0, double \hyperlink{class_object_a811bf2cbf614c4f0a3935a83fb639ffd}{height}=3.\+0, bool trigger\+Once=true)
+\item 
+\hyperlink{class_trigger_a1a2d107dd06737f51c81c4897c75e59d}{$\sim$\+Trigger} ()
+\item 
+void \hyperlink{class_trigger_ab5b020f8a583373f58ced6b7f01a8393}{trigger} ()
+\item 
+void \hyperlink{class_trigger_ad057434232243a59bd83306516a288ee}{untrigger} ()
+\item 
+\hyperlink{class_trigger}{Trigger} \& \hyperlink{class_trigger_ada2d3f1624610219bde159ee14b5ed96}{operator=} (\hyperlink{class_trigger}{Trigger} const \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_trigger}{Trigger} is an object that executes a function when colliding with \hyperlink{class_player_creature}{Player\+Creature}. It derives from \hyperlink{class_solid_object}{Solid\+Object}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Trigger@{Trigger}!Trigger@{Trigger}}
+\index{Trigger@{Trigger}!Trigger@{Trigger}}
+\subsubsection[{\texorpdfstring{Trigger(\+Game $\ast$const game\+Object, void(\+Game\+::$\ast$on\+Trigger)(), void(\+Game\+::$\ast$on\+Start\+Touch)(), void(\+Game\+::$\ast$on\+End\+Touch)(), double x=0.\+0, double y=0.\+0, double width=3.\+0, double height=3.\+0, bool trigger\+Once=true)}{Trigger(Game *const gameObject, void(Game::*onTrigger)(), void(Game::*onStartTouch)(), void(Game::*onEndTouch)(), double x=0.0, double y=0.0, double width=3.0, double height=3.0, bool triggerOnce=true)}}]{\setlength{\rightskip}{0pt plus 5cm}Trigger\+::\+Trigger (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$const}]{game\+Object, }
+\item[{void(Game\+::$\ast$)()}]{on\+Trigger, }
+\item[{void(Game\+::$\ast$)()}]{on\+Start\+Touch, }
+\item[{void(Game\+::$\ast$)()}]{on\+End\+Touch, }
+\item[{double}]{x = {\ttfamily 0.0}, }
+\item[{double}]{y = {\ttfamily 0.0}, }
+\item[{double}]{width = {\ttfamily 3.0}, }
+\item[{double}]{height = {\ttfamily 3.0}, }
+\item[{bool}]{trigger\+Once = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_trigger_aa3067e36467650cb24140cee1d66783c}{}\label{class_trigger_aa3067e36467650cb24140cee1d66783c}
+\hyperlink{class_trigger}{Trigger} constructor that sets position and size of a \hyperlink{class_trigger}{Trigger}. 
+\begin{DoxyParams}{Parameters}
+{\em game\+Object} & A constant pointer to \hyperlink{class_game}{Game} object. \\
+\hline
+{\em on\+Trigger} & A pointer to \hyperlink{class_game}{Game}\textquotesingle{}s member function that\textquotesingle{}s called while triggered. If trigger\+Once is set, on\+Trigger is basically the same as on\+Start\+Touch. \\
+\hline
+{\em on\+Start\+Touch} & A pointer to \hyperlink{class_game}{Game}\textquotesingle{}s member function that\textquotesingle{}s called whenever \hyperlink{class_player_creature}{Player\+Creature} enters trigger. \\
+\hline
+{\em on\+End\+Touch} & A pointer to \hyperlink{class_game}{Game}\textquotesingle{}s member function that\textquotesingle{}s called whenever \hyperlink{class_player_creature}{Player\+Creature} leaves trigger. \\
+\hline
+{\em x} & X position of \hyperlink{class_trigger}{Trigger}. Defaults to 0.\+0. \\
+\hline
+{\em y} & Y position of \hyperlink{class_trigger}{Trigger}. Defaults to 0.\+0. \\
+\hline
+{\em width} & Width of \hyperlink{class_trigger}{Trigger}. Defaults to 3.\+0. \\
+\hline
+{\em height} & Height of \hyperlink{class_trigger}{Trigger}. Defaults to 3.\+0. \\
+\hline
+{\em trigger\+Once} & If you want to use trigger multiple times set to false. Otherwise trigger will fire only once. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_solid_object}{Solid\+Object} 
+
+\hyperlink{class_game}{Game}
+\end{DoxySeeAlso}
+\hyperlink{class_trigger}{Trigger} implementation \hyperlink{class_trigger}{Trigger} constructor that sets position and size of a \hyperlink{class_trigger}{Trigger}. 
+\begin{DoxyParams}{Parameters}
+{\em game\+Object} & A constant pointer to \hyperlink{class_game}{Game} object. \\
+\hline
+{\em on\+Trigger} & A pointer to \hyperlink{class_game}{Game}\textquotesingle{}s member function that\textquotesingle{}s called while triggered. If trigger\+Once is set, on\+Trigger is basically the same as on\+Start\+Touch. \\
+\hline
+{\em on\+Start\+Touch} & A pointer to \hyperlink{class_game}{Game}\textquotesingle{}s member function that\textquotesingle{}s called whenever \hyperlink{class_player_creature}{Player\+Creature} enters trigger. \\
+\hline
+{\em on\+End\+Touch} & A pointer to \hyperlink{class_game}{Game}\textquotesingle{}s member function that\textquotesingle{}s called whenever \hyperlink{class_player_creature}{Player\+Creature} leaves trigger. \\
+\hline
+{\em x} & X position of \hyperlink{class_trigger}{Trigger}. Defaults to 0.\+0. \\
+\hline
+{\em y} & Y position of \hyperlink{class_trigger}{Trigger}. Defaults to 0.\+0. \\
+\hline
+{\em width} & Width of \hyperlink{class_trigger}{Trigger}. Defaults to 3.\+0. \\
+\hline
+{\em height} & Height of \hyperlink{class_trigger}{Trigger}. Defaults to 3.\+0. \\
+\hline
+{\em trigger\+Once} & If you want to use trigger multiple times set to false. Otherwise trigger will fire only once. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_solid_object}{Solid\+Object} 
+
+\hyperlink{class_game}{Game} 
+\end{DoxySeeAlso}
+\index{Trigger@{Trigger}!````~Trigger@{$\sim$\+Trigger}}
+\index{````~Trigger@{$\sim$\+Trigger}!Trigger@{Trigger}}
+\subsubsection[{\texorpdfstring{$\sim$\+Trigger()}{~Trigger()}}]{\setlength{\rightskip}{0pt plus 5cm}Trigger\+::$\sim$\+Trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_trigger_a1a2d107dd06737f51c81c4897c75e59d}{}\label{class_trigger_a1a2d107dd06737f51c81c4897c75e59d}
+\hyperlink{class_trigger}{Trigger} destructor. 
+
+\subsection{Member Function Documentation}
+\index{Trigger@{Trigger}!operator=@{operator=}}
+\index{operator=@{operator=}!Trigger@{Trigger}}
+\subsubsection[{\texorpdfstring{operator=(\+Trigger const \&)=delete}{operator=(Trigger const &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Trigger}\& Trigger\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Trigger} const \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_trigger_ada2d3f1624610219bde159ee14b5ed96}{}\label{class_trigger_ada2d3f1624610219bde159ee14b5ed96}
+Assignment operator is deleted because \hyperlink{class_trigger}{Trigger} has constant variable. \index{Trigger@{Trigger}!trigger@{trigger}}
+\index{trigger@{trigger}!Trigger@{Trigger}}
+\subsubsection[{\texorpdfstring{trigger()}{trigger()}}]{\setlength{\rightskip}{0pt plus 5cm}void Trigger\+::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_trigger_ab5b020f8a583373f58ced6b7f01a8393}{}\label{class_trigger_ab5b020f8a583373f58ced6b7f01a8393}
+Fire when something collides with trigger. \index{Trigger@{Trigger}!untrigger@{untrigger}}
+\index{untrigger@{untrigger}!Trigger@{Trigger}}
+\subsubsection[{\texorpdfstring{untrigger()}{untrigger()}}]{\setlength{\rightskip}{0pt plus 5cm}void Trigger\+::untrigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_trigger_ad057434232243a59bd83306516a288ee}{}\label{class_trigger_ad057434232243a59bd83306516a288ee}
+Fire when something stops collision with trigger. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Trigger.\+h\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Trigger.\+cpp\end{DoxyCompactItemize}

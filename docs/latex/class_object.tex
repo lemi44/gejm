@@ -1,0 +1,226 @@
+\hypertarget{class_object}{}\section{Object Class Reference}
+\label{class_object}\index{Object@{Object}}
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
+Inheritance diagram for Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_object_abf2f1d3f0bcbe2d3fbbeb8952c4e3c9a}{Object} (double \hyperlink{class_object_a02010c1708632be33a760486b1f648f8}{x}=0.\+0, double \hyperlink{class_object_a542c4d6094ace575fb4a28f46b9cc6a1}{y}=0.\+0, double \hyperlink{class_object_a3afad0ab476968e517b6f48c2a32719f}{width}=1.\+0, double \hyperlink{class_object_a811bf2cbf614c4f0a3935a83fb639ffd}{height}=1.\+0)
+\item 
+virtual \hyperlink{class_object_ae8f5483f459e46687bd01e6f9977afd3}{$\sim$\+Object} ()
+\item 
+virtual void \hyperlink{class_object_a32051814ea5da4026c5f9517ddb6f212}{save\+Previous} ()
+\item 
+void \hyperlink{class_object_ad14022400495b1f902037890e7a1cba8}{destroy} ()
+\item 
+double \hyperlink{class_object_a5c85757552e0dc8a69baf769540cc612}{getY} () const 
+\item 
+double \hyperlink{class_object_a313c75c1fdb4a1521ed91b27fd648f44}{getX} () const 
+\item 
+double \hyperlink{class_object_a5156f1f3a18b1a0f0102cab4d63ce591}{get\+Width} () const 
+\item 
+double \hyperlink{class_object_a0c42d68e0307a118e559d1451430f848}{get\+Height} () const 
+\item 
+double \hyperlink{class_object_ad3eae730cde5a541376bf80c3bc9e7e6}{get\+PrevX} () const 
+\item 
+double \hyperlink{class_object_a45112d0d370614c107503c8273a94f00}{get\+PrevY} () const 
+\item 
+bool \hyperlink{class_object_a6ee13f1d0f43428b60052a7bd0cddfb2}{get\+Destroyed} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_object_a02010c1708632be33a760486b1f648f8}{x}
+\item 
+double \hyperlink{class_object_a542c4d6094ace575fb4a28f46b9cc6a1}{y}
+\item 
+double \hyperlink{class_object_a3afad0ab476968e517b6f48c2a32719f}{width}
+\item 
+double \hyperlink{class_object_a811bf2cbf614c4f0a3935a83fb639ffd}{height}
+\item 
+double \hyperlink{class_object_a7fc555584143839562b90d46d294468e}{prevX}
+\item 
+double \hyperlink{class_object_a78d0f1c37128468d36f96bd2451b63ef}{prevY}
+\item 
+bool \hyperlink{class_object_a6c1d763b59ba8a5bcb23b383b3ac4428}{destroyed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_object}{Object} is a base class for all game objects. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{\texorpdfstring{Object(double x=0.\+0, double y=0.\+0, double width=1.\+0, double height=1.\+0)}{Object(double x=0.0, double y=0.0, double width=1.0, double height=1.0)}}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{double}]{x = {\ttfamily 0.0}, }
+\item[{double}]{y = {\ttfamily 0.0}, }
+\item[{double}]{width = {\ttfamily 1.0}, }
+\item[{double}]{height = {\ttfamily 1.0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_object_abf2f1d3f0bcbe2d3fbbeb8952c4e3c9a}{}\label{class_object_abf2f1d3f0bcbe2d3fbbeb8952c4e3c9a}
+The default constructor of \hyperlink{class_object}{Object}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of \hyperlink{class_object}{Object}. Defaults to 0.\+0 \\
+\hline
+{\em y} & Y position of \hyperlink{class_object}{Object}. Defaults to 0.\+0 \\
+\hline
+{\em width} & width of \hyperlink{class_object}{Object}. Defaults to 1.\+0 \\
+\hline
+{\em height} & height of \hyperlink{class_object}{Object}. Defaults to 1.\+0\\
+\hline
+\end{DoxyParams}
+\hyperlink{class_object}{Object} implementation The default constructor of \hyperlink{class_object}{Object}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of \hyperlink{class_object}{Object}. Defaults to 0.\+0 \\
+\hline
+{\em y} & Y position of \hyperlink{class_object}{Object}. Defaults to 0.\+0 \\
+\hline
+{\em width} & width of \hyperlink{class_object}{Object}. Defaults to 1.\+0 \\
+\hline
+{\em height} & height of \hyperlink{class_object}{Object}. Defaults to 1.\+0 \\
+\hline
+\end{DoxyParams}
+\index{Object@{Object}!````~Object@{$\sim$\+Object}}
+\index{````~Object@{$\sim$\+Object}!Object@{Object}}
+\subsubsection[{\texorpdfstring{$\sim$\+Object()}{~Object()}}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::$\sim$\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_object_ae8f5483f459e46687bd01e6f9977afd3}{}\label{class_object_ae8f5483f459e46687bd01e6f9977afd3}
+The default destructor. 
+
+\subsection{Member Function Documentation}
+\index{Object@{Object}!destroy@{destroy}}
+\index{destroy@{destroy}!Object@{Object}}
+\subsubsection[{\texorpdfstring{destroy()}{destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void Object\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_object_ad14022400495b1f902037890e7a1cba8}{}\label{class_object_ad14022400495b1f902037890e7a1cba8}
+Destroy object by seeting it\textquotesingle{}s destroyed value to true. If object is destroyed, it shouldn\textquotesingle{}t be used. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Object@{Object}!get\+Destroyed@{get\+Destroyed}}
+\index{get\+Destroyed@{get\+Destroyed}!Object@{Object}}
+\subsubsection[{\texorpdfstring{get\+Destroyed() const }{getDestroyed() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\+::get\+Destroyed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_object_a6ee13f1d0f43428b60052a7bd0cddfb2}{}\label{class_object_a6ee13f1d0f43428b60052a7bd0cddfb2}
+Check if object is destroyed. \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{Object@{Object}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Object@{Object}}
+\subsubsection[{\texorpdfstring{get\+Height() const }{getHeight() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_object_a0c42d68e0307a118e559d1451430f848}{}\label{class_object_a0c42d68e0307a118e559d1451430f848}
+Get objects height. \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\index{Object@{Object}!get\+PrevX@{get\+PrevX}}
+\index{get\+PrevX@{get\+PrevX}!Object@{Object}}
+\subsubsection[{\texorpdfstring{get\+Prev\+X() const }{getPrevX() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::get\+PrevX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_object_ad3eae730cde5a541376bf80c3bc9e7e6}{}\label{class_object_ad3eae730cde5a541376bf80c3bc9e7e6}
+Get previous X position. \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\index{Object@{Object}!get\+PrevY@{get\+PrevY}}
+\index{get\+PrevY@{get\+PrevY}!Object@{Object}}
+\subsubsection[{\texorpdfstring{get\+Prev\+Y() const }{getPrevY() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::get\+PrevY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_object_a45112d0d370614c107503c8273a94f00}{}\label{class_object_a45112d0d370614c107503c8273a94f00}
+Get previous Y position. \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\index{Object@{Object}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Object@{Object}}
+\subsubsection[{\texorpdfstring{get\+Width() const }{getWidth() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_object_a5156f1f3a18b1a0f0102cab4d63ce591}{}\label{class_object_a5156f1f3a18b1a0f0102cab4d63ce591}
+Get objects width. \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\index{Object@{Object}!getX@{getX}}
+\index{getX@{getX}!Object@{Object}}
+\subsubsection[{\texorpdfstring{get\+X() const }{getX() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_object_a313c75c1fdb4a1521ed91b27fd648f44}{}\label{class_object_a313c75c1fdb4a1521ed91b27fd648f44}
+Get X position. \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\index{Object@{Object}!getY@{getY}}
+\index{getY@{getY}!Object@{Object}}
+\subsubsection[{\texorpdfstring{get\+Y() const }{getY() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_object_a5c85757552e0dc8a69baf769540cc612}{}\label{class_object_a5c85757552e0dc8a69baf769540cc612}
+Get Y position. \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\index{Object@{Object}!save\+Previous@{save\+Previous}}
+\index{save\+Previous@{save\+Previous}!Object@{Object}}
+\subsubsection[{\texorpdfstring{save\+Previous()}{savePrevious()}}]{\setlength{\rightskip}{0pt plus 5cm}void Object\+::save\+Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_object_a32051814ea5da4026c5f9517ddb6f212}{}\label{class_object_a32051814ea5da4026c5f9517ddb6f212}
+Virtual function that changes members that hold information about previous step to hold current state of \hyperlink{class_object}{Object}. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_creature_ab0f46259c6eafea41ed737a67954b1d2}{Creature}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Object@{Object}!destroyed@{destroyed}}
+\index{destroyed@{destroyed}!Object@{Object}}
+\subsubsection[{\texorpdfstring{destroyed}{destroyed}}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\+::destroyed\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_object_a6c1d763b59ba8a5bcb23b383b3ac4428}{}\label{class_object_a6c1d763b59ba8a5bcb23b383b3ac4428}
+Is object destroyed. \index{Object@{Object}!height@{height}}
+\index{height@{height}!Object@{Object}}
+\subsubsection[{\texorpdfstring{height}{height}}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::height\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_object_a811bf2cbf614c4f0a3935a83fb639ffd}{}\label{class_object_a811bf2cbf614c4f0a3935a83fb639ffd}
+Height of \hyperlink{class_object}{Object}. \index{Object@{Object}!prevX@{prevX}}
+\index{prevX@{prevX}!Object@{Object}}
+\subsubsection[{\texorpdfstring{prevX}{prevX}}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::prevX\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_object_a7fc555584143839562b90d46d294468e}{}\label{class_object_a7fc555584143839562b90d46d294468e}
+Previous X position of \hyperlink{class_object}{Object}. \index{Object@{Object}!prevY@{prevY}}
+\index{prevY@{prevY}!Object@{Object}}
+\subsubsection[{\texorpdfstring{prevY}{prevY}}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::prevY\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_object_a78d0f1c37128468d36f96bd2451b63ef}{}\label{class_object_a78d0f1c37128468d36f96bd2451b63ef}
+Previous Y position of \hyperlink{class_object}{Object}. \index{Object@{Object}!width@{width}}
+\index{width@{width}!Object@{Object}}
+\subsubsection[{\texorpdfstring{width}{width}}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::width\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_object_a3afad0ab476968e517b6f48c2a32719f}{}\label{class_object_a3afad0ab476968e517b6f48c2a32719f}
+Width of \hyperlink{class_object}{Object}. \index{Object@{Object}!x@{x}}
+\index{x@{x}!Object@{Object}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::x\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_object_a02010c1708632be33a760486b1f648f8}{}\label{class_object_a02010c1708632be33a760486b1f648f8}
+X position of \hyperlink{class_object}{Object}. \index{Object@{Object}!y@{y}}
+\index{y@{y}!Object@{Object}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::y\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_object_a542c4d6094ace575fb4a28f46b9cc6a1}{}\label{class_object_a542c4d6094ace575fb4a28f46b9cc6a1}
+Y position of \hyperlink{class_object}{Object}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Object.\+h\item 
+C\+:/\+Users/\+Michał/\+Desktop/forest\+\_\+mldp/\+Projekt/trunk/Object.\+cpp\end{DoxyCompactItemize}
